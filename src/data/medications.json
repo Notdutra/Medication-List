@@ -1,0 +1,356 @@
+{
+  "safe": [
+    {
+      "name": "Acetaminophen",
+      "activeIngredient": "acetaminophen",
+      "commonBrands": [
+        "Tylenol",
+        "Panadol",
+        "Atasol",
+        "Tempra",
+        "Abenol"
+      ],
+      "notes": "Safe for pain relief and fever reduction. Follow dosage instructions carefully."
+    },
+    {
+      "name": "Paracetamol",
+      "activeIngredient": "paracetamol",
+      "commonBrands": [
+        "Tylenol",
+        "Panadol",
+        "Atasol",
+        "Tempra"
+      ],
+      "notes": "Same as Acetaminophen - safe for pain relief and fever reduction."
+    },
+    {
+      "name": "Dextromethorphan",
+      "activeIngredient": "dextromethorphan",
+      "commonBrands": [
+        "Robitussin DM",
+        "Delsym",
+        "Benylin DM",
+        "Buckley's DM"
+      ],
+      "notes": "Safe cough suppressant. Follow recommended dosage."
+    },
+    {
+      "name": "Guaifenesin",
+      "activeIngredient": "guaifenesin",
+      "commonBrands": [
+        "Mucinex",
+        "Robitussin",
+        "Benylin E"
+      ],
+      "notes": "Safe expectorant for chest congestion."
+    },
+    {
+      "name": "Diphenhydramine",
+      "activeIngredient": "diphenhydramine",
+      "commonBrands": [
+        "Benadryl",
+        "Nytol",
+        "Sominex",
+        "Allerdryl"
+      ],
+      "notes": "Safe antihistamine for allergies. May cause drowsiness."
+    },
+    {
+      "name": "Doxylamine",
+      "activeIngredient": "doxylamine",
+      "commonBrands": [
+        "Unisom",
+        "Nyquil"
+      ],
+      "notes": "Safe antihistamine and sleep aid."
+    },
+    {
+      "name": "Chlorpheniramine",
+      "activeIngredient": "chlorpheniramine",
+      "commonBrands": [
+        "Chlor-Trimeton",
+        "Chlor-Tripolon"
+      ],
+      "notes": "Safe antihistamine for allergies."
+    },
+    {
+      "name": "Loratadine",
+      "activeIngredient": "loratadine",
+      "commonBrands": [
+        "Claritin",
+        "Alavert"
+      ],
+      "notes": "Safe non-drowsy antihistamine for allergies."
+    },
+    {
+      "name": "Cetirizine",
+      "activeIngredient": "cetirizine",
+      "commonBrands": [
+        "Zyrtec",
+        "Reactine"
+      ],
+      "notes": "Safe antihistamine for allergies."
+    },
+    {
+      "name": "Fexofenadine",
+      "activeIngredient": "fexofenadine",
+      "commonBrands": [
+        "Allegra"
+      ],
+      "notes": "Safe non-drowsy antihistamine for allergies."
+    },
+    {
+      "name": "Pseudoephedrine",
+      "activeIngredient": "pseudoephedrine",
+      "commonBrands": [
+        "Sudafed",
+        "Contac Cold"
+      ],
+      "notes": "Safe decongestant. May increase blood pressure."
+    },
+    {
+      "name": "Phenylephrine",
+      "activeIngredient": "phenylephrine",
+      "commonBrands": [
+        "Sudafed PE",
+        "Neo-Synephrine"
+      ],
+      "notes": "Safe nasal decongestant."
+    },
+    {
+      "name": "Hyoscine Butylbromide",
+      "activeIngredient": "hyoscine butylbromide",
+      "commonBrands": [
+        "Buscopan"
+      ],
+      "notes": "Safe for stomach cramps and IBS."
+    },
+    {
+      "name": "Dicyclomine",
+      "activeIngredient": "dicyclomine",
+      "commonBrands": [
+        "Bentyl"
+      ],
+      "notes": "Safe antispasmodic for IBS and stomach cramps."
+    },
+    {
+      "name": "Tramadol",
+      "activeIngredient": "tramadol",
+      "commonBrands": [
+        "Ultram"
+      ],
+      "notes": "Safe pain reliever. Prescription required."
+    },
+    {
+      "name": "Codeine",
+      "activeIngredient": "codeine",
+      "commonBrands": [
+        "Tylenol with Codeine"
+      ],
+      "notes": "Safe pain reliever and cough suppressant. Prescription required."
+    },
+    {
+      "name": "Prednisone",
+      "activeIngredient": "prednisone",
+      "commonBrands": [
+        "Deltasone"
+      ],
+      "notes": "Safe corticosteroid for inflammation. Prescription required."
+    },
+    {
+      "name": "Methylprednisolone",
+      "activeIngredient": "methylprednisolone",
+      "commonBrands": [
+        "Medrol"
+      ],
+      "notes": "Safe corticosteroid for inflammation. Prescription required."
+    },
+    {
+      "name": "Hydrocortisone",
+      "activeIngredient": "hydrocortisone",
+      "commonBrands": [
+        "Cortef",
+        "Cortizone-10"
+      ],
+      "notes": "Safe corticosteroid for inflammation and skin conditions."
+    }
+  ],
+  "avoid": [
+    {
+      "name": "Acetylsalicylic Acid",
+      "activeIngredient": "acetylsalicylic acid",
+      "commonBrands": [
+        "Aspirin",
+        "Bayer"
+      ],
+      "notes": "AVOID - This is aspirin. Do not take."
+    },
+    {
+      "name": "Aspirin",
+      "activeIngredient": "acetylsalicylic acid",
+      "commonBrands": [
+        "Bayer",
+        "Bufferin",
+        "Excedrin",
+        "Anacin",
+        "Entrophen",
+        "Novasen"
+      ],
+      "notes": "AVOID - Contains acetylsalicylic acid. Do not take."
+    },
+    {
+      "name": "Ibuprofen",
+      "activeIngredient": "ibuprofen",
+      "commonBrands": [
+        "Advil",
+        "Motrin",
+        "Nurofen",
+        "Midol"
+      ],
+      "notes": "AVOID - NSAID that should not be taken. Use acetaminophen instead."
+    },
+    {
+      "name": "Naproxen",
+      "activeIngredient": "naproxen",
+      "commonBrands": [
+        "Aleve",
+        "Naprosyn",
+        "Anaprox"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Diclofenac",
+      "activeIngredient": "diclofenac",
+      "commonBrands": [
+        "Voltaren",
+        "Cataflam",
+        "Pennsaid"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Ketorolac",
+      "activeIngredient": "ketorolac",
+      "commonBrands": [
+        "Toradol"
+      ],
+      "notes": "AVOID - Powerful NSAID that should not be taken."
+    },
+    {
+      "name": "Indomethacin",
+      "activeIngredient": "indomethacin",
+      "commonBrands": [
+        "Indocin"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Meloxicam",
+      "activeIngredient": "meloxicam",
+      "commonBrands": [
+        "Mobic"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Piroxicam",
+      "activeIngredient": "piroxicam",
+      "commonBrands": [
+        "Feldene"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Ketoprofen",
+      "activeIngredient": "ketoprofen",
+      "commonBrands": [
+        "Orudis"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Celecoxib",
+      "activeIngredient": "celecoxib",
+      "commonBrands": [
+        "Celebrex"
+      ],
+      "notes": "AVOID - COX-2 inhibitor NSAID that should not be taken."
+    },
+    {
+      "name": "Etodolac",
+      "activeIngredient": "etodolac",
+      "commonBrands": [
+        "Lodine"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Fenoprofen",
+      "activeIngredient": "fenoprofen",
+      "commonBrands": [
+        "Nalfon"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Flurbiprofen",
+      "activeIngredient": "flurbiprofen",
+      "commonBrands": [
+        "Ansaid",
+        "Ocufen"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Mefenamic Acid",
+      "activeIngredient": "mefenamic acid",
+      "commonBrands": [
+        "Ponstel"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Nabumetone",
+      "activeIngredient": "nabumetone",
+      "commonBrands": [
+        "Relafen"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Sulindac",
+      "activeIngredient": "sulindac",
+      "commonBrands": [
+        "Clinoril"
+      ],
+      "notes": "AVOID - NSAID that should not be taken."
+    },
+    {
+      "name": "Dipyrone",
+      "activeIngredient": "dipyrone",
+      "commonBrands": [
+        "Metamizole",
+        "Novalgin"
+      ],
+      "notes": "AVOID - Can cause serious side effects. Do not take."
+    },
+    {
+      "name": "Metamizole",
+      "activeIngredient": "metamizole",
+      "commonBrands": [
+        "Dipyrone",
+        "Novalgin"
+      ],
+      "notes": "AVOID - Can cause serious side effects. Do not take."
+    },
+    {
+      "name": "Metoclopramide",
+      "activeIngredient": "metoclopramide",
+      "commonBrands": [
+        "Reglan"
+      ],
+      "notes": "AVOID - Can cause serious neurological side effects."
+    }
+  ]
+}

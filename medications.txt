@@ -1,0 +1,42 @@
+Cannot Take
+Acetylsalicylic acid
+Aspirin
+Ibuprofen
+Naproxen
+Diclofenac
+Ketorolac
+Indomethacin
+Meloxicam
+Piroxicam
+Ketoprofen
+Celecoxib
+Etodolac
+Fenoprofen
+Flurbiprofen
+Mefenamic acid
+Nabumetone
+Sulindac
+Dipyrone
+Metamizole
+Metoclopramide
+
+Can Take
+Acetaminophen
+Paracetamol
+Dextromethorphan
+Guaifenesin
+Diphenhydramine
+Doxylamine
+Chlorpheniramine
+Loratadine
+Cetirizine
+Fexofenadine
+Pseudoephedrine
+Phenylephrine
+Hyoscine butylbromide
+Dicyclomine
+Tramadol
+Codeine
+Prednisone
+Methylprednisolone
+Hydrocortisone
