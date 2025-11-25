@@ -7,6 +7,7 @@ import type { Medication, MedicationData } from "@/types/medication";
 import Link from "next/link";
 import { ArrowLeft, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useMemo } from "react";
 
 export default function MedicationList() {
   const data = medicationData as MedicationData;
@@ -19,6 +20,51 @@ export default function MedicationList() {
   const sortedAvoid = [...data.avoid].sort((a, b) =>
     a.activeIngredient.localeCompare(b.activeIngredient)
   );
+  const sortedCombos = [...(data.combos || [])].sort((a, b) =>
+    a.name.localeCompare(b.name)
+  );
+
+  // Helper to group by active ingredient so duplicates (eg: acetaminophen/paracetamol)
+  // are merged into a single display entry. We merge commonBrands and notes.
+  const groupByActive = (arr: Medication[]) => {
+    const map = new Map<string, Medication>();
+    arr.forEach((m) => {
+      const key = m.activeIngredient.toLowerCase();
+      if (!map.has(key)) {
+        map.set(key, { ...m, commonBrands: [...(m.commonBrands || [])] });
+      } else {
+        const existing = map.get(key)!;
+        // Prefer a name that is not identical to active ingredient, else keep first
+        if (
+          existing.name.toLowerCase() ===
+            existing.activeIngredient.toLowerCase() &&
+          m.name.toLowerCase() !== m.activeIngredient.toLowerCase()
+        ) {
+          existing.name = m.name;
+        }
+        // Merge commonBrands and unique
+        const combinedBrands = new Set([
+          ...(existing.commonBrands || []),
+          ...(m.commonBrands || []),
+        ]);
+        existing.commonBrands = Array.from(combinedBrands);
+        // Aggregate notes if we don't already have them
+        if (existing.notes && m.notes && !existing.notes.includes(m.notes)) {
+          existing.notes = existing.notes + "; " + m.notes;
+        } else if (!existing.notes) {
+          existing.notes = m.notes;
+        }
+        map.set(key, existing);
+      }
+    });
+
+    // Convert map back to array and sort
+    return Array.from(map.values()).sort((a, b) =>
+      a.activeIngredient.localeCompare(b.activeIngredient)
+    );
+  };
+  const groupedSafe = useMemo(() => groupByActive(sortedSafe), [sortedSafe]);
+  const groupedAvoid = useMemo(() => groupByActive(sortedAvoid), [sortedAvoid]);
 
   const handlePrint = () => {
     window.print();
@@ -104,8 +150,8 @@ export default function MedicationList() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-2 print:gap-1">
-            {sortedSafe.map((med: Medication, index: number) => {
+          <div className="grid grid-cols-1 gap-1 print:gap-1">
+            {groupedSafe.map((med: Medication, index: number) => {
               const namesAreSame =
                 med.name.toLowerCase() === med.activeIngredient.toLowerCase();
 
@@ -114,8 +160,8 @@ export default function MedicationList() {
                   key={index}
                   className="border-l-4 border-l-emerald-500 print:shadow-none print:border"
                 >
-                  <CardContent className="py-3 print:py-2">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 print:gap-2">
+                  <CardContent className="py-2 print:py-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 print:gap-2">
                       <div>
                         <p className="text-xs font-semibold text-gray-500 mb-1">
                           {namesAreSame
@@ -161,8 +207,8 @@ export default function MedicationList() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-2 print:gap-1">
-            {sortedAvoid.map((med: Medication, index: number) => {
+          <div className="grid grid-cols-1 gap-1 print:gap-1">
+            {groupedAvoid.map((med: Medication, index: number) => {
               const namesAreSame =
                 med.name.toLowerCase() === med.activeIngredient.toLowerCase();
 
@@ -171,8 +217,8 @@ export default function MedicationList() {
                   key={index}
                   className="border-l-4 border-l-red-500 print:shadow-none print:border"
                 >
-                  <CardContent className="py-3 print:py-2">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 print:gap-2">
+                  <CardContent className="py-2 print:py-2">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 print:gap-2">
                       <div>
                         <p className="text-xs font-semibold text-gray-500 mb-1">
                           {namesAreSame
@@ -205,6 +251,68 @@ export default function MedicationList() {
             })}
           </div>
         </section>
+
+        {/* Combos Section */}
+        {sortedCombos.length > 0 && (
+          <section className="mb-8 print:mb-6">
+            <div className="mb-4 pb-2 border-b-2 border-slate-400">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 flex items-center gap-2">
+                <span className="text-slate-500">📋</span>
+                Combination Products (Combos)
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 gap-2 print:gap-1">
+              {sortedCombos.map((combo, idx) => {
+                const avoidActives = new Set(
+                  data.avoid.map((m) => m.activeIngredient.toLowerCase())
+                );
+                const reasons = combo.actives.filter((a) =>
+                  avoidActives.has(a.toLowerCase())
+                );
+                const category = reasons.length > 0 ? "avoid" : "safe";
+                return (
+                  <Card
+                    key={idx}
+                    className={`border-l-4 ${
+                      category === "avoid"
+                        ? "border-l-red-500"
+                        : "border-l-emerald-500"
+                    } print:shadow-none print:border`}
+                  >
+                    <CardContent className="py-3 print:py-2">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 print:gap-2">
+                        <div>
+                          <p className="text-xs font-semibold text-gray-500 mb-1">
+                            PRODUCT NAME
+                          </p>
+                          <p className="font-bold text-gray-900 text-base print:text-sm">
+                            {combo.name}
+                          </p>
+                          <p className="text-xs text-gray-500">
+                            Active Ingredients: {combo.actives.join(", ")}
+                          </p>
+                          {reasons.length > 0 && (
+                            <p className="text-sm text-red-600 font-semibold">
+                              Contains: {reasons.join(", ")}
+                            </p>
+                          )}
+                        </div>
+                        <div>
+                          <p className="text-xs font-semibold text-gray-500 mb-1">
+                            NOTES
+                          </p>
+                          <p className="text-gray-700 text-sm print:text-xs">
+                            {combo.notes || ""}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         {/* Footer */}
         <div className="mt-8 pt-6 border-t text-center text-sm text-gray-500 print:mt-4 print:pt-3">

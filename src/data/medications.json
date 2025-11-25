@@ -1,202 +1,142 @@
 {
   "safe": [
     {
-      "name": "Acetaminophen",
+      "name": "Acetaminophen (Paracetamol)",
       "activeIngredient": "acetaminophen",
       "commonBrands": [
         "Tylenol",
+        "Tylenol Extra Strength",
+        "Tylenol Arthritis",
+        "Tylenol Rapid Release",
+        "Tylenol Muscle Aches & Body Pain",
+        "Tylenol Cold & Flu (acetaminophen component in combos)",
         "Panadol",
         "Atasol",
         "Tempra",
-        "Abenol"
+        "Abenol",
+        "Life Brand Acetaminophen",
+        "Equate Acetaminophen"
       ],
-      "notes": "Safe for pain relief and fever reduction. Follow dosage instructions carefully."
-    },
-    {
-      "name": "Paracetamol",
-      "activeIngredient": "paracetamol",
-      "commonBrands": [
-        "Tylenol",
-        "Panadol",
-        "Atasol",
-        "Tempra"
-      ],
-      "notes": "Same as Acetaminophen - safe for pain relief and fever reduction."
+      "notes": "Pain/fever reliever. Avoid duplicate acetaminophen across combo products; watch total daily dose."
     },
     {
       "name": "Dextromethorphan",
       "activeIngredient": "dextromethorphan",
       "commonBrands": [
+        "Benylin DM",
         "Robitussin DM",
         "Delsym",
-        "Benylin DM",
-        "Buckley's DM"
+        "Vicks DayQuil Cough (dextromethorphan component)",
+        "Life Brand Cough DM"
       ],
-      "notes": "Safe cough suppressant. Follow recommended dosage."
+      "notes": "Cough suppressant. Often combined with other ingredients; check combo safety."
     },
     {
       "name": "Guaifenesin",
       "activeIngredient": "guaifenesin",
       "commonBrands": [
         "Mucinex",
-        "Robitussin",
-        "Benylin E"
+        "Robitussin Chest Congestion",
+        "Benylin E",
+        "Life Brand Expectorant"
       ],
-      "notes": "Safe expectorant for chest congestion."
-    },
-    {
-      "name": "Diphenhydramine",
-      "activeIngredient": "diphenhydramine",
-      "commonBrands": [
-        "Benadryl",
-        "Nytol",
-        "Sominex",
-        "Allerdryl"
-      ],
-      "notes": "Safe antihistamine for allergies. May cause drowsiness."
-    },
-    {
-      "name": "Doxylamine",
-      "activeIngredient": "doxylamine",
-      "commonBrands": [
-        "Unisom",
-        "Nyquil"
-      ],
-      "notes": "Safe antihistamine and sleep aid."
-    },
-    {
-      "name": "Chlorpheniramine",
-      "activeIngredient": "chlorpheniramine",
-      "commonBrands": [
-        "Chlor-Trimeton",
-        "Chlor-Tripolon"
-      ],
-      "notes": "Safe antihistamine for allergies."
+      "notes": "Expectorant to loosen mucus. Often combined with dextromethorphan or decongestants."
     },
     {
       "name": "Loratadine",
       "activeIngredient": "loratadine",
       "commonBrands": [
         "Claritin",
-        "Alavert"
+        "Claritin Allergy",
+        "Claritin Children",
+        "Reactine Allergy (some markets)",
+        "Life Brand Loratadine"
       ],
-      "notes": "Safe non-drowsy antihistamine for allergies."
+      "notes": "Non-drowsy antihistamine for allergies. Often considered safer than first-generation sedating antihistamines in many patients."
     },
     {
       "name": "Cetirizine",
       "activeIngredient": "cetirizine",
       "commonBrands": [
+        "Reactine",
         "Zyrtec",
-        "Reactine"
+        "Life Brand Cetirizine"
       ],
-      "notes": "Safe antihistamine for allergies."
+      "notes": "Second-generation antihistamine for allergies. Mild sedation possible in some people."
     },
     {
       "name": "Fexofenadine",
       "activeIngredient": "fexofenadine",
       "commonBrands": [
-        "Allegra"
+        "Allegra",
+        "Allegra Allergy",
+        "Life Brand Fexofenadine"
       ],
-      "notes": "Safe non-drowsy antihistamine for allergies."
+      "notes": "Non-drowsy antihistamine for seasonal allergies."
     },
     {
-      "name": "Pseudoephedrine",
-      "activeIngredient": "pseudoephedrine",
+      "name": "Calcium Carbonate",
+      "activeIngredient": "calcium carbonate",
       "commonBrands": [
-        "Sudafed",
-        "Contac Cold"
+        "Tums",
+        "Rolaids (some formulations)",
+        "Life Brand Antacid Tablets"
       ],
-      "notes": "Safe decongestant. May increase blood pressure."
+      "notes": "Antacid for heartburn. May affect absorption of some medications; separate doses as advised."
     },
     {
-      "name": "Phenylephrine",
-      "activeIngredient": "phenylephrine",
+      "name": "Aluminum / Magnesium Hydroxide + Simethicone",
+      "activeIngredient": "aluminum hydroxide / magnesium hydroxide / simethicone",
       "commonBrands": [
-        "Sudafed PE",
-        "Neo-Synephrine"
+        "Maalox",
+        "Mylanta",
+        "Life Brand Antacid + Anti-Gas"
       ],
-      "notes": "Safe nasal decongestant."
+      "notes": "Antacid and anti-gas combination. Check for other conditions (kidney disease) with provider."
     },
     {
-      "name": "Hyoscine Butylbromide",
-      "activeIngredient": "hyoscine butylbromide",
+      "name": "Simethicone",
+      "activeIngredient": "simethicone",
       "commonBrands": [
-        "Buscopan"
+        "Gas-X",
+        "Ovol",
+        "Phazyme",
+        "Life Brand Anti-Gas"
       ],
-      "notes": "Safe for stomach cramps and IBS."
+      "notes": "Relieves gas and bloating. Minimal systemic absorption."
     },
     {
-      "name": "Dicyclomine",
-      "activeIngredient": "dicyclomine",
+      "name": "Saline Nasal Spray",
+      "activeIngredient": "sodium chloride (saline)",
       "commonBrands": [
-        "Bentyl"
+        "Ocean Nasal Spray",
+        "Salinex",
+        "Life Brand Saline Nasal Spray"
       ],
-      "notes": "Safe antispasmodic for IBS and stomach cramps."
+      "notes": "Non-medicated nasal saline for congestion and dryness. Typically very safe."
     },
     {
-      "name": "Tramadol",
-      "activeIngredient": "tramadol",
+      "name": "Topical Menthol / Camphor Rub",
+      "activeIngredient": "menthol / camphor",
       "commonBrands": [
-        "Ultram"
+        "Vicks VapoRub",
+        "Tiger Balm (some strengths)",
+        "Life Brand Chest Rub"
       ],
-      "notes": "Safe pain reliever. Prescription required."
-    },
-    {
-      "name": "Codeine",
-      "activeIngredient": "codeine",
-      "commonBrands": [
-        "Tylenol with Codeine"
-      ],
-      "notes": "Safe pain reliever and cough suppressant. Prescription required."
-    },
-    {
-      "name": "Prednisone",
-      "activeIngredient": "prednisone",
-      "commonBrands": [
-        "Deltasone"
-      ],
-      "notes": "Safe corticosteroid for inflammation. Prescription required."
-    },
-    {
-      "name": "Methylprednisolone",
-      "activeIngredient": "methylprednisolone",
-      "commonBrands": [
-        "Medrol"
-      ],
-      "notes": "Safe corticosteroid for inflammation. Prescription required."
-    },
-    {
-      "name": "Hydrocortisone",
-      "activeIngredient": "hydrocortisone",
-      "commonBrands": [
-        "Cortef",
-        "Cortizone-10"
-      ],
-      "notes": "Safe corticosteroid for inflammation and skin conditions."
+      "notes": "Topical chest rubs for cough/congestion relief. Avoid ingestion; follow label directions."
     }
   ],
   "avoid": [
     {
-      "name": "Acetylsalicylic Acid",
+      "name": "Acetylsalicylic Acid (Aspirin)",
       "activeIngredient": "acetylsalicylic acid",
       "commonBrands": [
         "Aspirin",
-        "Bayer"
-      ],
-      "notes": "AVOID - This is aspirin. Do not take."
-    },
-    {
-      "name": "Aspirin",
-      "activeIngredient": "acetylsalicylic acid",
-      "commonBrands": [
         "Bayer",
         "Bufferin",
-        "Excedrin",
-        "Anacin",
-        "Entrophen",
-        "Novasen"
+        "Excedrin (aspirin-containing products)"
       ],
-      "notes": "AVOID - Contains acetylsalicylic acid. Do not take."
+      "notes": "AVOID — salicylate. Found alone and in many combination headache, cold, and pain products."
     },
     {
       "name": "Ibuprofen",
@@ -205,9 +145,9 @@
         "Advil",
         "Motrin",
         "Nurofen",
-        "Midol"
+        "Life Brand Ibuprofen"
       ],
-      "notes": "AVOID - NSAID that should not be taken. Use acetaminophen instead."
+      "notes": "Non-steroidal anti-inflammatory drug (NSAID). Avoid if instructed to avoid NSAIDs (e.g., some kidney, GI, cardiac, or pregnancy situations)."
     },
     {
       "name": "Naproxen",
@@ -215,142 +155,143 @@
       "commonBrands": [
         "Aleve",
         "Naprosyn",
-        "Anaprox"
+        "Anaprox",
+        "Life Brand Naproxen"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "NSAID. Similar cautions as ibuprofen; avoid if told to avoid NSAIDs."
     },
     {
-      "name": "Diclofenac",
+      "name": "Diclofenac (Oral)",
       "activeIngredient": "diclofenac",
       "commonBrands": [
-        "Voltaren",
-        "Cataflam",
-        "Pennsaid"
+        "Voltaren (oral)",
+        "Cataflam"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Oral NSAID formulation. Avoid if NSAIDs are contraindicated. Topical diclofenac gel may be handled differently—verify separately."
     },
     {
-      "name": "Ketorolac",
-      "activeIngredient": "ketorolac",
+      "name": "Pseudoephedrine",
+      "activeIngredient": "pseudoephedrine",
       "commonBrands": [
-        "Toradol"
+        "Sudafed",
+        "Advil Cold & Sinus",
+        "Claritin-D",
+        "Reactine Allergy + Sinus",
+        "Life Brand Sinus Relief (pseudoephedrine-containing)"
       ],
-      "notes": "AVOID - Powerful NSAID that should not be taken."
+      "notes": "Systemic decongestant. Often avoided in certain heart conditions, hypertension, pregnancy, or other specific situations."
     },
     {
-      "name": "Indomethacin",
-      "activeIngredient": "indomethacin",
+      "name": "Phenylephrine (Systemic)",
+      "activeIngredient": "phenylephrine",
       "commonBrands": [
-        "Indocin"
+        "Sudafed PE",
+        "NeoCitran (some formulations)",
+        "DayQuil (older phenylephrine-containing versions)",
+        "Life Brand Cold & Sinus PE"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Systemic decongestant similar concerns as pseudoephedrine; avoid if instructed. Nasal sprays with phenylephrine may have different risk profiles."
     },
     {
-      "name": "Meloxicam",
-      "activeIngredient": "meloxicam",
+      "name": "First-Generation Sedating Antihistamines",
+      "activeIngredient": "diphenhydramine / chlorpheniramine / doxylamine (class)",
       "commonBrands": [
-        "Mobic"
+        "Benadryl (diphenhydramine)",
+        "NyQuil (doxylamine component)",
+        "Dimetapp (chlorpheniramine in some formulations)",
+        "Sleep-eze",
+        "Unisom"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Sedating antihistamines. Often avoided in many patients due to drowsiness, confusion risk, and other side effects—especially in older adults or certain conditions."
     },
     {
-      "name": "Piroxicam",
-      "activeIngredient": "piroxicam",
+      "name": "Combination NSAID + Acetaminophen Products",
+      "activeIngredient": "ibuprofen + acetaminophen (class)",
       "commonBrands": [
-        "Feldene"
+        "Advil Dual Action",
+        "Some generic pain reliever combos"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Avoid if NSAIDs are contraindicated, even if acetaminophen is safe."
+    }
+  ],
+  "combos": [
+    {
+      "name": "Advil Cold & Sinus",
+      "actives": [
+        "ibuprofen",
+        "pseudoephedrine"
+      ],
+      "notes": "Contains ibuprofen (NSAID) and pseudoephedrine (systemic decongestant)."
     },
     {
-      "name": "Ketoprofen",
-      "activeIngredient": "ketoprofen",
-      "commonBrands": [
-        "Orudis"
+      "name": "DayQuil Cold & Flu (typical)",
+      "actives": [
+        "acetaminophen",
+        "dextromethorphan",
+        "phenylephrine"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Common daytime cold/flu product. Check safety of decongestant component (phenylephrine) and watch total acetaminophen dose."
     },
     {
-      "name": "Celecoxib",
-      "activeIngredient": "celecoxib",
-      "commonBrands": [
-        "Celebrex"
+      "name": "NyQuil Cold & Flu (typical)",
+      "actives": [
+        "acetaminophen",
+        "dextromethorphan",
+        "doxylamine"
       ],
-      "notes": "AVOID - COX-2 inhibitor NSAID that should not be taken."
+      "notes": "Nighttime cold/flu product. Contains sedating antihistamine (doxylamine); avoid if first-generation antihistamines are not recommended."
     },
     {
-      "name": "Etodolac",
-      "activeIngredient": "etodolac",
-      "commonBrands": [
-        "Lodine"
+      "name": "NeoCitran Cold & Flu (Hot Drink)",
+      "actives": [
+        "acetaminophen",
+        "pheniramine",
+        "phenylephrine"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Hot drink cold/flu remedy. Contains decongestant and antihistamine; check both components for safety."
     },
     {
-      "name": "Fenoprofen",
-      "activeIngredient": "fenoprofen",
-      "commonBrands": [
-        "Nalfon"
+      "name": "Excedrin Extra Strength (typical)",
+      "actives": [
+        "acetaminophen",
+        "aspirin",
+        "caffeine"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Migraine/headache combo with aspirin (salicylate). Avoid if aspirin/salicylates are contraindicated."
     },
     {
-      "name": "Flurbiprofen",
-      "activeIngredient": "flurbiprofen",
-      "commonBrands": [
-        "Ansaid",
-        "Ocufen"
+      "name": "Claritin-D",
+      "actives": [
+        "loratadine",
+        "pseudoephedrine"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Antihistamine + decongestant. Evaluate decongestant safety (pseudoephedrine)."
     },
     {
-      "name": "Mefenamic Acid",
-      "activeIngredient": "mefenamic acid",
-      "commonBrands": [
-        "Ponstel"
+      "name": "Reactine Allergy + Sinus",
+      "actives": [
+        "cetirizine",
+        "pseudoephedrine"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Second-generation antihistamine plus decongestant. Check pseudoephedrine risks."
     },
     {
-      "name": "Nabumetone",
-      "activeIngredient": "nabumetone",
-      "commonBrands": [
-        "Relafen"
+      "name": "Tylenol Cold & Sinus (typical)",
+      "actives": [
+        "acetaminophen",
+        "pseudoephedrine"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
+      "notes": "Acetaminophen plus systemic decongestant. Evaluate decongestant safety and total acetaminophen."
     },
     {
-      "name": "Sulindac",
-      "activeIngredient": "sulindac",
-      "commonBrands": [
-        "Clinoril"
+      "name": "Tylenol Complete Cold, Cough & Flu (typical)",
+      "actives": [
+        "acetaminophen",
+        "dextromethorphan",
+        "pseudoephedrine",
+        "guaifenesin"
       ],
-      "notes": "AVOID - NSAID that should not be taken."
-    },
-    {
-      "name": "Dipyrone",
-      "activeIngredient": "dipyrone",
-      "commonBrands": [
-        "Metamizole",
-        "Novalgin"
-      ],
-      "notes": "AVOID - Can cause serious side effects. Do not take."
-    },
-    {
-      "name": "Metamizole",
-      "activeIngredient": "metamizole",
-      "commonBrands": [
-        "Dipyrone",
-        "Novalgin"
-      ],
-      "notes": "AVOID - Can cause serious side effects. Do not take."
-    },
-    {
-      "name": "Metoclopramide",
-      "activeIngredient": "metoclopramide",
-      "commonBrands": [
-        "Reglan"
-      ],
-      "notes": "AVOID - Can cause serious neurological side effects."
+      "notes": "Multi-symptom product. Check decongestant suitability and avoid duplicate acetaminophen."
     }
   ]
 }

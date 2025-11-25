@@ -102,12 +102,25 @@ export default function Home() {
             <CardHeader className="pb-3">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 <div className="flex-1">
-                  <CardTitle className="text-xl md:text-2xl mb-2">
-                    {result.medication.name}
-                  </CardTitle>
-                  <CardDescription className="text-sm md:text-base">
-                    Active Ingredient: {result.medication.activeIngredient}
-                  </CardDescription>
+                  {result.type === "medication" ? (
+                    <>
+                      <CardTitle className="text-xl md:text-2xl mb-2">
+                        {result.medication.name}
+                      </CardTitle>
+                      <CardDescription className="text-sm md:text-base">
+                        Active Ingredient: {result.medication.activeIngredient}
+                      </CardDescription>
+                    </>
+                  ) : (
+                    <>
+                      <CardTitle className="text-xl md:text-2xl mb-2">
+                        {result.combo.name}
+                      </CardTitle>
+                      <CardDescription className="text-sm md:text-base">
+                        Active Ingredients: {result.combo.actives.join(", ")}
+                      </CardDescription>
+                    </>
+                  )}
                 </div>
                 <Badge
                   className={`${getCategoryColor(
@@ -120,29 +133,66 @@ export default function Home() {
               </div>
             </CardHeader>
             <CardContent>
-              {result.medication.commonBrands &&
-                result.medication.commonBrands.length > 0 && (
+              {result.fuzzy && (
+                <div className="mb-3 text-sm text-gray-500 italic">
+                  Did you mean this medication?
+                </div>
+              )}
+              {result.type === "medication" ? (
+                <>
+                  {result.medication.commonBrands &&
+                    result.medication.commonBrands.length > 0 && (
+                      <div className="mb-3">
+                        <p className="text-sm font-semibold text-gray-700 mb-1">
+                          Common Brands:
+                        </p>
+                        <p className="text-sm text-gray-600">
+                          {result.medication.commonBrands.join(", ")}
+                        </p>
+                      </div>
+                    )}
+                  {result.medication.notes && (
+                    <div
+                      className={`p-3 md:p-4 rounded-md ${
+                        result.category === "safe"
+                          ? "bg-emerald-50 border border-emerald-200"
+                          : "bg-red-50 border border-red-200"
+                      }`}
+                    >
+                      <p className="text-sm md:text-base text-gray-700">
+                        {result.medication.notes}
+                      </p>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <>
                   <div className="mb-3">
                     <p className="text-sm font-semibold text-gray-700 mb-1">
-                      Common Brands:
+                      Active Ingredients:
                     </p>
                     <p className="text-sm text-gray-600">
-                      {result.medication.commonBrands.join(", ")}
+                      {result.combo.actives.join(", ")}
                     </p>
                   </div>
-                )}
-              {result.medication.notes && (
-                <div
-                  className={`p-3 md:p-4 rounded-md ${
-                    result.category === "safe"
-                      ? "bg-emerald-50 border border-emerald-200"
-                      : "bg-red-50 border border-red-200"
-                  }`}
-                >
-                  <p className="text-sm md:text-base text-gray-700">
-                    {result.medication.notes}
-                  </p>
-                </div>
+                  {result.reasons && result.reasons.length > 0 && (
+                    <div className="mb-3 p-3 md:p-4 rounded-md bg-red-50 border border-red-200">
+                      <p className="text-sm font-semibold text-red-600 mb-1">
+                        Warning – Contains Avoid Ingredient(s):
+                      </p>
+                      <p className="text-sm text-red-700">
+                        {result.reasons.join(", ")}
+                      </p>
+                    </div>
+                  )}
+                  {result.combo.notes && (
+                    <div className="p-3 md:p-4 rounded-md bg-gray-50 border border-gray-200">
+                      <p className="text-sm md:text-base text-gray-700">
+                        {result.combo.notes}
+                      </p>
+                    </div>
+                  )}
+                </>
               )}
             </CardContent>
           </Card>
